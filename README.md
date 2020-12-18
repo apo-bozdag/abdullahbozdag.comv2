@@ -1,2 +1,3 @@
-npm install -g win-node-env
-npm install
+`npm install`
+
+`npm run develop`
