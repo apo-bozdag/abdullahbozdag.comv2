@@ -1,4 +1,4 @@
-**Calistirmak icin ;**
+**Calistirmak icin;**
 
 `npm install`
 
