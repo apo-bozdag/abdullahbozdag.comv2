@@ -43,14 +43,14 @@ class Component extends React.Component {
       >
         <Link
           className={classes.link}
-          href='https://github.com/soulextract/soulextract.com'
-          target='github'
+          href='https://www.radkod.com/'
+          target='radkod'
           onMouseEnter={() => sounds.hover.play()}
           onLinkStart={onLinkStart}
           onLinkEnd={onLinkEnd}
         >
           <Text animation={{ animate, show, duration }} stableTime>
-            — Open Source by Contributors —
+            — RadKod —
           </Text>
         </Link>
       </p>

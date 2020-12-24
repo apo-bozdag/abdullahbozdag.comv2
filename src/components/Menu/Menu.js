@@ -112,7 +112,7 @@ class Component extends React.PureComponent {
         duration: duration.enter / 2
       });
       anime({
-        targets: [divisors[0], divisors[2]],
+        targets: [divisors[0], divisors[1]],
         easing: 'easeOutCubic',
         scaleY: [0, 1],
         translateX: (divisor, index) => [[100, 0, -100][index], 0],
@@ -189,41 +189,33 @@ class Component extends React.PureComponent {
           ref={ref => (this.element = ref)}
           {...etc}
         >
-          <Link href='/news' {...linkProps}>
+          <Link href='/blog' {...linkProps}>
             <Text
               animation={{ animate: animateText }}
               audio={{ silent: !animateText }}
             >
-              News
+              Blog
             </Text>
           </Link>
           <b className={cx(classes.item, classes.divisor)}>|</b>
-          <Link href='/music' {...linkProps}>
+          <Link href='/projelerim' {...linkProps}>
             <Text
               animation={{ animate: animateText }}
               audio={{ silent: !animateText }}
             >
-              Music
+              Projelerim
             </Text>
           </Link>
           <b className={cx(classes.item, classes.divisor)}>|</b>
-          <Link href='/charity' {...linkProps}>
+          <Link href='/hakkimda' {...linkProps}>
             <Text
               animation={{ animate: animateText }}
               audio={{ silent: !animateText }}
             >
-              Charity
+              Hakkımda
             </Text>
           </Link>
-          <b className={cx(classes.item, classes.divisor)}>|</b>
-          <Link href='/about' {...linkProps}>
-            <Text
-              animation={{ animate: animateText }}
-              audio={{ silent: !animateText }}
-            >
-              About
-            </Text>
-          </Link>
+
         </nav>
       </Secuence>
     );

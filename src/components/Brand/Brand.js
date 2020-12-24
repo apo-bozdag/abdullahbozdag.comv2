@@ -111,11 +111,11 @@ class Component extends React.Component {
         <Link
           className={classes.link}
           href={link}
-          title='Soul Extract logo'
+          title='Abdullah Bozdağ Logo'
           onLinkStart={onLinkStart}
           onLinkEnd={onLinkEnd}
         >
-          <span className={classes.title}>SoulExtract</span>
+          <span className={classes.title}>Abdullah Bozdağ</span>
           <svg
             ref={ref => (this.svgElement = ref)}
             className={classes.svg}
@@ -123,17 +123,21 @@ class Component extends React.Component {
             xmlns='http://www.w3.org/2000/svg'
             onMouseEnter={() => sounds.hover.play()}
           >
-            <path className={classes.path} d='M0,81 L263,81 L263,46 L158,46 L158,10 L501,10' />
-            <path className={classes.path} d='M290,81 L378,81 L378,37 L290,37 L290,89' />
-            <path className={classes.path} d='M405,29 L405,81 L493,81 L493,29' />
-            <path className={classes.path} d='M520,2 L520,81 L599,81' />
-            <path className={classes.path} d='M547,46 L563,46' />
-            <path className={classes.path} d='M538,10 L624,10 L704,90 M616,90 L704,2' />
-            <path className={classes.path} d='M711,10 L833,10 M753,18 L753,89' />
-            <path className={classes.path} d='M841,89 L841,10 L929,10 L929,46 L853,46 L879,77' />
-            <path className={classes.path} d='M953,89 L953,10 L1041,10 L1041,89 M961,46 L1033,46' />
-            <path className={classes.path} d='M1126,10 L1068,10 L1068,81 L1181,81' />
-            <path className={classes.path} d='M1141,10 L1400,10 M1199,18 L1199,89' />
+            <path className={classes.path} d='M 0 81 L 109 81 L 169 3 L 169 25 L 169 89' />
+            <path className={classes.path} d='M 198 44 L 239 44 L 249 8 L 190 8 L 190 81 L 252 81 L 252 37' />
+            <path className={classes.path} d='M 273 0 L 273 81 L 315 81 L 335 53 L 335 8 L 281 8' />
+            <path className={classes.path} d='M 356 0 L 356 81 L 418 81 L 418 0' />
+            <path className={classes.path} d='M 439 0 L 439 81 L 504 80' />
+            <path className={classes.path} d='M 583 80 L 517 80 L 517 0' />
+            <path className={classes.path} d='M 596 88 L 596 5 L 646 83 L 646 88' />
+            <path className={classes.path} d='M 667 88 L 667 0 V 45 H 715 V 88 V 0' />
+            <path className={classes.path} d='M 807 40 L 818 8 L 759 8 L 759 80 L 821 80 L 821 43 L 762 43' />
+            <path className={classes.path} d='M 877 80 L 842 80 L 842 8 L 884 8 L 884 88' />
+            <path className={classes.path} d='M 897 8 L 961 8 L 908 80 L 977 80' />
+            <path className={classes.path} d='M 991 0 L 990 80 L 1037 80 L 1051 50 L 1051 8 L 992 8' />
+            <path className={classes.path} d='M 1217 80 L 1125 80 L 1072 4 L 1072 88' />
+            <path className={classes.path} d='M 1218 23 L 1143 23 L 1143 80 L 1211 80 L 1211 76 L 1186 52' />
+            <path className={classes.path} d='M 1135 4 L 1218 4' />
           </svg>
         </Link>
       </h1>

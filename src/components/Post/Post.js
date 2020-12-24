@@ -69,12 +69,13 @@ class Component extends React.Component {
       data,
       ...etc
     } = this.props;
+    const message = data.hasOwnProperty('message') ? data.message : data['content:encodedSnippet'].substring(0, 100) + '...';
 
-    const messageTexts = data.message
+    const messageTexts = message
       .split('\n')
       .map((fragment, index) => (
         <React.Fragment key={index}>
-          {index !== 0 && <br />}
+          {index !== 0 && <br/>}
           <Text audio={audio}>{fragment}</Text>
         </React.Fragment>
       ));
@@ -89,19 +90,25 @@ class Component extends React.Component {
           <Link
             className={classes.link}
             href={data.link}
+            rel="nofollow"
             target='_blank'
             onMouseEnter={() => sounds.hover && energy.entered && sounds.hover.play()}
           >
-            <Fader
-              node='div'
-              className={classes.media}
-              audio={audio}
-            >
-              <div
-                className={classes.image}
-                style={{ backgroundImage: data.image && `url(${data.image})` }}
-              />
-            </Fader>
+            {
+              data.hasOwnProperty('image') && (
+                <Fader
+                  node='div'
+                  className={classes.media}
+                  audio={audio}
+                >
+                  <div
+                    className={classes.image}
+                    style={{ backgroundImage: data.image && `url(${data.image})` }}
+                  />
+                </Fader>
+              )
+            }
+
             <div className={classes.info}>
               <h1 className={classes.title}>
                 <Text audio={audio}>

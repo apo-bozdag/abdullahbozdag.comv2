@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'Soul Extract',
-  description: 'Alternative Rock injected with electronic and cinematic elements. Proud member of the FiXT roster.',
-  keywords: 'soul extract, soulextract, alternative electronic rock, cinematic elements, fixt, fixt roster, science fiction',
-  url: 'https://soulextract.com',
-  twitter: '@soulextract',
-  seoImage: 'https://soulextract.com/images/soulextract.jpg',
+  title: 'Abdullah Bozdağ - Web Developer',
+  description: 'Abdullah Bozdağ olarak kurduğum kişisel sitem.',
+  keywords: 'Web Developer, backend, developer, abdullah bozdağ, github, php, python, js',
+  url: 'https://abdullahbozdag.com/',
+  twitter: '@apo_bozdag',
+  seoImage: 'https://abdullahbozdag.com/images/abdullahbozdag.jpg',
   color: '#000000'
 };

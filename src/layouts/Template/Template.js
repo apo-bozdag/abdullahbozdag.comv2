@@ -59,7 +59,7 @@ class Component extends React.Component {
     const { show, enterShow, enterAnimationShow } = this.state;
     const { location, classes, layout, background, children } = this.props;
 
-    const isURLContent = ['/news', '/music', '/charity', '/about'].find(path => {
+    const isURLContent = ['/blog', '/projelerim', '/hakkimda'].find(path => {
       return location.pathname.indexOf(path) === 0;
     });
 
@@ -79,8 +79,8 @@ class Component extends React.Component {
                   ref={ref => (this.enterElement = ref)}
                   audio={{ silent: true }}
                   animation={{ independent: true, show: enterAnimationShow }}
-                  message='SoulExtract.com uses sounds.'
-                  option='Enter'
+                  message='abdullahbozdag.com ses kullanacak.'
+                  option='Tamam'
                   onOption={this.onEnter}
                 />
               )}
